@@ -48,7 +48,7 @@ const blender = (string) => {
 }
 
 const square = (num, message) => {
-    console.log('Message', message)
+    console.log('Message', message);
     return num * num;
 }
 //arrow function are glocal while normal function is local
