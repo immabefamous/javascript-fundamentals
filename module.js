@@ -37,18 +37,15 @@ const functionB = () => {
     console.log(`FUNCTION B HAS BEEN CALLED`)
 }
 const functionC = () => {
-    console.log)'FUNCTION C HAS BEEN CALLED!'
+    console.log('FUNCTION C HAS BEEN CALLED!')
 }
 
-const greet = (person) => {
-    console.log ('Hello', person)
-}
 const blender = (string) => {
     return string.split('')
 }
 
-const square = (num, message) => {
+/*const square = (num, message) => {
     console.log('Message', message);
     return num * num;
-}
+} */
 //arrow function are glocal while normal function is local
