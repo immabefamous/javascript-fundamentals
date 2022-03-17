@@ -6,10 +6,11 @@ let apt1 = {
     rent: 4500,
     unit: '1A'}
     
-let apt2 = {bedrooms: 2, 
+let apt2 = {
+    bedrooms: 1, 
     sqft: 500, 
-    bathroom: 3, 
-    windows: 0,
+    bathroom: 1, 
+    windows: 2,
     rent: 1500,
     unit: '1B'
 }
