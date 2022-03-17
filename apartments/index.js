@@ -43,6 +43,7 @@ let tenant1 = {
     creditScore:400,
     salary: 1500,
     age: 30,
+    pet: 'Fido'
 }
 
 let tenant2 = {
@@ -59,6 +60,9 @@ let building = {
     lease: function (apt, tenant) {
         if (apt.tenants.length === apt.bedrooms) {
             return `${apt.unit} is already full!`
+        }
+        if (this.allowPets === false && tenant.pet) {
+            return `${apt.unit} is available, but you must give Fido up for adoption!`
         }
         apt.tenants.push(tenant)
         console.log(tenant.name , 'has reted out', apt.unit)
