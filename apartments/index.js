@@ -71,3 +71,44 @@ let building = {
 }
 
 //builing.apartments.forEach()
+
+//Write a basic JavaScript object that represents a user that has no 
+//fewer than 3 keys/properties about that user
+
+const user = {
+    firstName: 'Kevin',
+    lastName: 'Future',
+    height: '6ft',
+
+}
+
+// Write a function called 
+// greet that takes no arguments and prints the string "Hello World"
+
+const greet = () => "Hello World"
+
+// Create an array called fruits with 5 elements
+
+let fruits = ['apple', 'banana', 'oranges', 'grapes', 'pear']
+
+// console.log the second element and console.log the last element of the above array
+
+console.log(fruits.slice(1, 2))
+console.log(fruits.slice(4))
+
+// Create an object that represents an apartment building without referring to any code
+
+const apartmentcomplex = {
+    Name: 'Dope Commons',
+    address: '1 1st Ave, New York, NY 10000',
+    floors: 10,
+    units: 100
+}
+
+let tBeTenants = {
+
+}
+
+let uBeUnits = {
+
+}
