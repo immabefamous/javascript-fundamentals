@@ -64,12 +64,27 @@ let building = {
         if (this.allowPets === false && tenant.pet) {
             return `${apt.unit} is available, but you must give Fido up for adoption!`
         }
-        apt.tenants.push(tenant)
+        let t = apt.tenants.push(tenant)
         console.log(tenant.name , 'has reted out', apt.unit)
+        return t
+    },
+    occupiedApts: function(){
+    // returns only the aps which have tenants inside them
+    // condition to test: apt. tenants.length
+    this.apartments.filter((el) =>  {
+        return el.tenants.length > 0
+    })
+    },
+    fullApts: function() {
+        //returns only the apts which are completely full
+        // condition to rest apt.tenants.length === apt.bedrooms
+        return this.apartments.filter((el) => {
+            return el.tenants.length === el.bedrooms
+        })
     },
     apartments: [apt1, apt2, apt3],
 }
-
+/*
 //builing.apartments.forEach()
 
 //Write a basic JavaScript object that represents a user that has no 
@@ -112,3 +127,4 @@ let tBeTenants = {
 let uBeUnits = {
 
 }
+*/
