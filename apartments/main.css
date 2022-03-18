@@ -1,5 +1,5 @@
 cody {
-    font-family: sans-serif;
+    font-family: 'Rublik', sans-serif;
     padding: 0 18%;
 }
 h1{
@@ -7,6 +7,10 @@ h1{
     font-size: 3em;
     margin-bottom: 5px;
 }
+.transparent {
+    opacity: 0.5;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
@@ -44,4 +48,11 @@ button{
     font-size: 1.8em;
     display: block;
     margin: 0 auto;
+}
+
+@keyframes levitate {
+    from {
+        position: relative;
+        top: -5%
+    }
 }

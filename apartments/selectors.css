@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+}
+
+h2 {font-family: courier
+}
+
+section {
+    background-color: pink;
+}
+
+body > section:nth-child(3) {
+    background: firebrick;
+}
+/* This will target every element withthis class */
+.text {
+    font-size: 2em;
+}
+
+h2[class^="header-"] {
+    text-align: center;
+}
