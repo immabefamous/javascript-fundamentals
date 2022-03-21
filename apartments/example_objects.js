@@ -55,3 +55,4 @@ const character = {
 console.log(character.ally.power)
 
 
+
